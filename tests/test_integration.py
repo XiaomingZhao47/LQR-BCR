@@ -46,7 +46,6 @@ if __name__ == '__main__':
     test_ddp_newton_matches_riccati()
     print("\\nAll integration tests passed!")
 
-# Write all files
 files_to_write = {
     'bcr/__init__.py': bcr_init,
     'lqr/__init__.py': lqr_init,
@@ -66,10 +65,10 @@ for filepath, content in files_to_write.items():
     full_path = os.path.join(base_dir, filepath)
     with open(full_path, 'w') as f:
         f.write(content)
-    print(f"✅ Created: {filepath}")
+    print(f"Created: {filepath}")
 
 print(f"\n{'='*80}")
-print("✅ ALL MODULE FILES CREATED!")
+print("ALL MODULE FILES CREATED")
 print(f"{'='*80}")
 print(f"\nProject location: {base_dir}")
 print("\nTo run tests:")
