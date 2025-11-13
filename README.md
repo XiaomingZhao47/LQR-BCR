@@ -28,7 +28,8 @@ This project implements and analyzes block cyclic reduction methods for optimal 
 ### Updated from 11/11
 
 - Implement a generic (symmetric) BCR solver for block-tridiagonal systems in CUDA
-- Think about how to leverage low-level sparsity in each block. 
+- Think about how to leverage low-level sparsity in each block.
+<img width="949" height="957" alt="image" src="https://github.com/user-attachments/assets/03499ea3-14ab-4c31-a068-a5cbe86fff0a" />
 
 ## Key Findings
 
