@@ -12,7 +12,6 @@ This project implements and analyzes block cyclic reduction methods for optimal 
 ## Project Goals
 
 ### Goal 1: Construct Block-Tridiagonal KKT System
-**Status**: Partially achieved
 
 - construct block-tridiagonal KKT system
 - encodes LQR problem with dynamics constraints
@@ -20,12 +19,16 @@ This project implements and analyzes block cyclic reduction methods for optimal 
 - system is indefinite as saddle-point, not compatible with HPD-BCR
 
 ### Goal 2: Implement Block Cyclic Reduction
-**Status**: Achieved
 
 - HPD cyclic reduction implemented
 - tested on LQR-derived systems
 - verified against Riccati solution
-- O(log N) parallel depth 
+- O(log N) parallel depth
+
+### Updated from 11/11
+
+- Implement a generic (symmetric) BCR solver for block-tridiagonal systems in CUDA
+- Think about how to leverage low-level sparsity in each block. 
 
 ## Key Findings
 
