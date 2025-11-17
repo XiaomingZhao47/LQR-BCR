@@ -20,4 +20,4 @@ cd ..
 pip install -e .
 
 echo "Build complete!"
-echo "Run tests with: python tests/test_cuda_bcr.py"
+echo "Run tests with: python tests/test_cuda_bcr.py"=
