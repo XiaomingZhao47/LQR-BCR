@@ -1,0 +1,12 @@
+pyproject.toml
+setup.py
+python/cuda_bcr/__init__.py
+python/cuda_bcr/solver.py
+python/cuda_bcr/utils.py
+python/cuda_bcr.egg-info/PKG-INFO
+python/cuda_bcr.egg-info/SOURCES.txt
+python/cuda_bcr.egg-info/dependency_links.txt
+python/cuda_bcr.egg-info/not-zip-safe
+python/cuda_bcr.egg-info/requires.txt
+python/cuda_bcr.egg-info/top_level.txt
+tests/test_cuda_bcr.py

@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "/home/xiaoming-zhao/LQR-BCR/cuda_bcr"
+    "cmake.sourceDirectory": "/home/xiaoming-zhao/LQR-BCR/cuda_bcr",
+    "editor.fontSize": 16
 }

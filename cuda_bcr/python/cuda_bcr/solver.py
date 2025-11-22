@@ -1,10 +1,14 @@
+# python/cuda_bcr/solver.py
 import numpy as np
 import time
 from typing import Tuple, Dict, Optional
+
 try:
-    from _cuda_bcr import BCRSolver as _BCRSolver
+    from cuda_bcr._cuda_bcr import BCRSolver as _BCRSolver
+    _cuda_available = True
 except ImportError:
     _BCRSolver = None
+    _cuda_available = False
     print("Warning: CUDA BCR module not found. Install with 'pip install -e .'")
 
 

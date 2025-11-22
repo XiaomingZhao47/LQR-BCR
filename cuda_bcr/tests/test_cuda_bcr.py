@@ -1,11 +1,17 @@
 import numpy as np
 import pytest
 import sys
-sys.path.insert(0, '..')
+import os
 
-from cuda_bcr import BCRSolver
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'python'))
+
+from cuda_bcr import BCRSolver, is_cuda_available
 from cuda_bcr.utils import format_lqr_system, validate_solution
 
+pytestmark = pytest.mark.skipif(
+    not is_cuda_available(),
+    reason="CUDA BCR module not available"
+)
 
 def test_basic_solve():
     """Test basic BCR solve."""

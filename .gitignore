@@ -8,3 +8,4 @@
 # cpp
 build/
 .vscode/settings.json
+cuda_bcr/venv

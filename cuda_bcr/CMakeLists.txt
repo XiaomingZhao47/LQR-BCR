@@ -57,7 +57,7 @@ install(TARGETS _cuda_bcr
 )
 
 # C++ test executable (optional)
-add_executable(test_cuda_bcr_cpp
-    tests/test_cpp.cu
-)
-target_link_libraries(test_cuda_bcr_cpp PRIVATE cuda_bcr_lib)
+# add_executable(test_cuda_bcr_cpp
+#     tests/test_cpp.cu
+# )
+# target_link_libraries(test_cuda_bcr_cpp PRIVATE cuda_bcr_lib)

@@ -5,8 +5,18 @@ Benchmark CUDA BCR against CPU Riccati recursion.
 
 import numpy as np
 import matplotlib.pyplot as plt
-from cuda_bcr import benchmark_vs_cpu
+import sys
+import os
 
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'python'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
+
+from cuda_bcr import BCRSolver, is_cuda_available
+from cuda_bcr.utils import benchmark_vs_cpu
+
+if not is_cuda_available():
+    print("ERROR: CUDA BCR module not available")
+    sys.exit(1)
 
 def main():
     print("=" * 60)

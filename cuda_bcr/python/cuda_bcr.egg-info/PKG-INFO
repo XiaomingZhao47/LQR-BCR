@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: cuda_bcr
+Version: 0.1.0
+Summary: CUDA-accelerated Block Cyclic Reduction for LQR
+Author: Xiaoming Zhao
+Author-email: Xiaoming Zhao <xiaoming.zhao.gr@dartmouth.edu>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.20
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: matplotlib>=3.0; extra == "dev"
+Dynamic: author
+Dynamic: requires-python
